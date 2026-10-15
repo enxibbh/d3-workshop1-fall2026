@@ -21,7 +21,10 @@ d3.select('#demo-1')
 
 // TODO: change the text above to add your name
 // TODO: change the color to something else you like // keep in mind color contrast
-
+d3.select('#demo-1')         //if you do not use append, it will overwrite the previous text
+    .style('color', 'black')
+    .style('font-size', '50px')
+    .text('Enxi Liu!');
 
 // Create and append new elements
 d3.select('#demo-1')
@@ -30,3 +33,7 @@ d3.select('#demo-1')
     .style('background-color', 'lightgray');
 
 // TODO: append a new element with your favorite food and style it with a different background color
+d3.select('#demo-1')
+    .append('p')             // The Paragraph tag representing HTML
+    .text('My favorite food is fried chicken')
+    .style('background-color', 'lightblue');
